@@ -26,3 +26,4 @@ images/facebook.svg filter=lfs diff=lfs merge=lfs -text
 images/glowing-synapse-multi-colored-neural-communication-abstract-design-generated-by-ai.jpg filter=lfs diff=lfs merge=lfs -text
 images/image-asset.jpg filter=lfs diff=lfs merge=lfs -text
 images/neurons-bright-background.jpg filter=lfs diff=lfs merge=lfs -text
+Nodejs/node.exe filter=lfs diff=lfs merge=lfs -text
