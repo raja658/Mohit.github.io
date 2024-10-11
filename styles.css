@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
 }
@@ -407,4 +408,415 @@ footer a:hover {
 .description {
   font-size: 18px;
   margin-bottom: 20px;
+=======
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url('Images/StockCake-Intricate Molecular Render_1728410030.jpg'); /* Add this line */
+  background-size: cover; /* Add this line */
+  background-position: center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#neuralNetworkCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind other elements */
+}
+
+#heading-with-bg {
+  background-color: #fcf9f9; /* replace with your desired color */
+  padding: 20px; /* add some padding to make the heading more prominent */
+}
+
+h1, nav {
+  position: relative; /* Stack above the canvas */
+  z-index: 1; /* Above the canvas */
+}
+
+.animate {
+  animation: zoom 2s infinite;
+}
+
+@keyframes zoom {
+  0% {
+    font-size: 12px;
+  }
+  50% {
+    font-size: 36px;
+  }
+  100% {
+    font-size: 12px;
+  }
+}
+
+/* Header Title Styles */
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #000000, #000000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Fallback value for non-WebKit browsers */
+  animation: animate 2s infinite;
+  position: relative; /* Add position relative to create a walking effect */
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #3e8e41;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007BFF;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  /* Add a subtle animation effect */
+  transition: backdrop-filter 0.3s ease-in-out;
+  /* Add a glassmorphic border */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.glassmorphic:hover {
+  backdrop-filter: blur(15px);
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #5a03fc;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Add some visual interest to the footer */
+  background-image: linear-gradient(to bottom, #007BFF, #0069C9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* Add a glassmorphic border to the footer */
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+.contact-section {
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.3); /* Add a semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Add a blur effect to the background */
+  -webkit-backdrop-filter: blur(10px); /* Add vendor prefix for Safari support */
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-detail {
+  font-size: 24px; /* Increased font size to 24px */
+  font-weight: bold; /* Made font bold */
+  text-transform: uppercase; /* Converted text to block letters */
+  margin-bottom: 20px;
+}
+
+.contact-detail i {
+  font-size: 36px; /* Increased font size to 36px */
+  margin-right: 10px;
+}
+
+.contact-detail span {
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.contact-detail a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-detail a:hover {
+  color: #666;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin-right: 20px;
+}
+
+.social-media img {
+  width: 36px; /* Increased icon size to 36px */
+  height: 36px; /* Increased icon size to 36px */
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+.about {
+  text-align: center;
+}
+
+.circle-picture {
+  width: 200px; /* Set the width of the image */
+  height: 200px; /* Set the height of the image */
+  border-radius: 50%; /* Make the image a circle */
+  object-fit: cover; /* Scale the image to fit the container */
+  margin: 20px auto; /* Add some margin around the image and center it horizontally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the image */
+  display: block; /* Make the image a block element to center it horizontally */
+}
+
+.about-me {
+  text-align: center; /* Center the text horizontally */
+  margin: 20px auto; /* Add some margin around the text and center it horizontally */
+  width: 80%; /* Set the width of the text container to 80% of the parent element */
+  max-width: 800px; /* Set the maximum width of the text container to 800px */
+}
+
+.about-me h2 {
+  margin-bottom: 10px; /* Add some margin below the heading */
+}
+
+.about-me p {
+  margin-bottom: 20px; /* Add some margin below the paragraph */
+}
+
+.hero {
+  background-image: url('Images/glowing-synapse-multi-colored-neural-communication-abstract-design-generated-by-ai.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-container {
+  margin-bottom: 20px;
+}
+
+/* Blur the background when the modal is shown */
+.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* Hide website content until purpose is answered */
+.main-content {
+  transition: filter 0.3s;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.content-container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+>>>>>>> 06c843245cca2dea26959471ce9bf65d86c093e7
 }
