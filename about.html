@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A portfolio showcasing my work as a bioengineer.">
+  <title>About - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <canvas id="neuralNetworkCanvas"></canvas>
+    <h1>MOHIT CHAND</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="vision.html">Vision</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <style>
+    /* Add styles for the about section */
+    section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 40px;
+    }
+    
+    .circle-picture {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 20px;
+    }
+    
+    .about-me {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .about-me h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .about-me p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  </style>
+  
+  <!-- About section -->
+  <section>
+    <img src="Images\photo1.png" alt="My Profile Picture" class="circle-picture">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>I am a passionate bioengineer with a love for creativity and innovation. I enjoy playing various sports including football, volleyball, and chess. My goal is to apply my skills in bioengineering to make a positive impact on healthcare.</p>
+      <p>In my free time, I explore new technologies and work on personal projects that combine my interests in science and engineering. I believe in continuous learning and strive to improve myself every day.</p>
+    </div>
+  </section>
+
+    <footer>
+        &copy; <span id="currentYear"></span> MOHIT CHAND
+    </footer>
+</body>
+</html>
